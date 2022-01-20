@@ -4,7 +4,6 @@ phases:
   install:
     runtime-versions:
       java: corretto8
-      gradle: v3.5
   build:
     commands:
       - gradle build
