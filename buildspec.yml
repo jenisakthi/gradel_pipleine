@@ -6,13 +6,13 @@ phases:
       java: corretto8
   build:
     commands:
-      - gradle -v
+      - gradle build
   post_build:
     commands:
       - echo Build completed
 artifacts:
   files:
-    - build/libs/*.jar
+    - build/libs/*.war
     - scripts/*.sh
     - appspec.yml
   #com/mycompany/app/HelloWorld.java, specifying yes will place this file in /HelloWorld.java
